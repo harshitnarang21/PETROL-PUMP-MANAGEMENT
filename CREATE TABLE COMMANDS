@@ -1,0 +1,18 @@
+table - customer, fuel, revenue
+CREATE TABLE customer (
+  cno INT PRIMARY KEY,
+  cname VARCHAR(255),
+  phone VARCHAR(10),
+  points INT
+);
+CREATE TABLE fuel (
+  tdate DATE PRIMARY KEY,
+  normalpetrol DECIMAL(10,2),
+  powerpetrol DECIMAL(10,2),
+  diesel DECIMAL(10,2)
+);
+CREATE TABLE revenue (
+  date_refill DATE,
+  fuel_type VARCHAR(255),
+  amount DECIMAL(10,2)
+);
